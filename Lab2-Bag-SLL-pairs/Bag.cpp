@@ -24,8 +24,8 @@ void Bag::add(TElem elem) {
     }
     
     //if not found just add at the begining
-    //TPair newElem = std::make_pair(elem, 1);
-    Node* newNode = new Node(elem);
+    TPair newElem = std::make_pair(elem, 1); //what the hell ??? xD (i dont get it)
+    Node* newNode = new Node(newElem);
     newNode->next = head; // newNode.next for value newNode->next for *pointers
     head = newNode;
     nrElems++;

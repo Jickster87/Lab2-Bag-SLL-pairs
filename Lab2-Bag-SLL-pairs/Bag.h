@@ -4,12 +4,13 @@
 
 
 //DO NOT CHANGE THIS PART
-#define NULL_TELEM -111111;
 typedef int TKey;
 typedef int TFreq;
 typedef TKey TElem;
-typedef std::pair<TKey, TFreq>TPair;
-#define NULL_TPAIR pair<TKey, TFreq>(-111111, -111111);
+#include <utility>
+typedef std::pair<TKey, TFreq> TPair;
+#define NULL_TVALUE -111111
+#define NULL_TPAIR pair<TKey, TValue>(-111111, -111111);
 
 class BagIterator;
 class Bag {

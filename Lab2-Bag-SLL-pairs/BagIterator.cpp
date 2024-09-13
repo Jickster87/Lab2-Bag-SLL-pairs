@@ -39,5 +39,5 @@ TElem BagIterator::getCurrent() const
     if (!valid()) {
         throw exception();
     }
-    return currentElem->elem;
+    return currentElem->elem.first;
 }
